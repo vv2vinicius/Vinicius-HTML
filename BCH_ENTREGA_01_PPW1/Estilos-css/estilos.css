@@ -34,7 +34,7 @@ header {
 		}
 		#tabelaJogos{
 			padding-top: 40px;
-			padding-left: 400px;
+			padding-left: 340px;
 			background-color: #D3D3D3;
 			height: 92%;
 			
@@ -50,6 +50,29 @@ header {
 			
 		}
 
+		#conteudo1{
+			margin-top: 10px;
+			height: 250%;
+			
+		}
+		#menu1 {
+			width:20%;
+			float: left;
+			background-color:#4F4F4F;
+			height: 100%;
+		}
+		#tabelaJogos1{
+			padding-top: 40px;
+			padding-left: 340px;
+			background-color: #D3D3D3;
+			height: 97.45%;
+			
+		}
+		
+		#linkks{
+			
+			color: red;
+		}
 
 
 
