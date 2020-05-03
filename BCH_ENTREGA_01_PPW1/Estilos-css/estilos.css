@@ -1,3 +1,14 @@
+
+* {
+	box-sizing:border-box;
+}
+html,body{	
+	width:100%;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+}
+
 header {
 			background-color: #666;
 			padding: 15px;
@@ -23,7 +34,7 @@ header {
 		}
 		#conteudo{
 			margin-top: 10px;
-			height: 80%;
+			height: 90%;
 			
 		}
 		#menu {
@@ -36,9 +47,15 @@ header {
 			padding-top: 40px;
 			padding-left: 340px;
 			background-color: #D3D3D3;
-			height: 92%;
+			height: 100%;
+	
+  
 			
 		}
+		
+	
+		
+		
 		footer {
 			position:absolute;
 			width: 100%;
@@ -55,24 +72,9 @@ header {
 			height: 250%;
 			
 		}
-		#menu1 {
-			width:20%;
-			float: left;
-			background-color:#4F4F4F;
-			height: 100%;
-		}
-		#tabelaJogos1{
-			padding-top: 40px;
-			padding-left: 340px;
-			background-color: #D3D3D3;
-			height: 97.45%;
-			
-		}
+
 		
-		#linkks{
-			
-			color: red;
-		}
+		
 
 
 
