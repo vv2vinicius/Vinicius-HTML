@@ -1,0 +1,235 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	</head>
+<body> 
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+		<a class="navbar-brand text-white "  href="#">Mj</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-white" href="Tabela-Jogos.html">Preços</a>
+				</li>
+				<li class="nav-item dropdown  " >
+					<a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Jogos
+					</a>
+					<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item text-white" href="Call_of_duty_modern_warfare.html">Call of Duty Modern Warfare</a>
+						<a class="dropdown-item text-white" href="Assassin_creed_blag_flags.html">Assassin's Creed IV Black Flag</a>
+						<a class="dropdown-item text-white" href="Nioh_2.html">Nioh 2</a>
+						<a class="dropdown-item text-white" href="Grand_Theft_Auto_V.html">Grand Theft Auto V</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-white" href="Cadastro.html"> Cadastre-se</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+
+	<div class="container mt-4">
+		<h3>Cadastre-se</h3>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<form>
+						<div class="form-group">
+							<label for="fname">Nome:</label><br>
+							<input type="text" id="fname" name="fname" style="width: 20em" placeholder="Nome"><br><br>
+							<label for="diaa">Data Nacimento:</label><br>
+							<input type="date" id="diaa" style="width: 20em" name="diaa"><br><br>
+							<label for="phonenum">Telefone  </label><br>
+							<input type="tel" name="telefone" id="telefone" maxlength="15" style="width: 20em" placeholder="(xx)xxxxx-xxxx" /><br><br>
+							
+						</div>
+					</form>
+				</div>
+				<div class="col">
+					<form>
+						<div class="form-group">
+							<label for="lname">Sobre Nome:</label><br>
+							<input type="text" id="lname" name="lname" style="width: 20em" placeholder="Sobre Nome"><br><br>
+							<label for="sex">Sexo:</label><br>
+							<input type="radio" name="sex" value="male"> Masculino
+							<input type="radio" name="sex" value="female"> Feminino<br>
+						</div>
+					</form>
+					<form name="f1">   
+								<table>
+									<td>
+										<br><label for="email">E-mail</label><br>
+										<input type="text" name="email" onblur="validacaoEmail(f1.email)"  style="width: 20em" placeholder="E-mail"><br><br>
+									</td>
+									<td>
+										<br><div id="msgemail"></div>
+									</td>
+								</table>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<form>
+						<div class="form-group">
+							<label for="lname">Endereço:</label><br>
+							<input type="text" id="lname" name="lname" style="width: 55em" placeholder="Endereço"><br><br>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="col">
+					<form>
+						<div class="form-group">
+							<label for="number">Numero:</label><br>
+							<input type="number" id="number" name="number" style="width: 20em" placeholder="Numero"><br><br>
+						</div>
+					</form>
+				</div>
+				<div class="col">
+					<form>
+						<div class="form-group">
+							<label for="estado">Estado:</label><br>
+							<select  id="estado" name="estado" style="width: 20em" placeholder="Estado>
+								<option value="">
+									<option value="AC">Acre</option>
+									<option value="AL">Alagoas</option>
+									<option value="AP">Amapá</option>
+									<option value="AM">Amazonas</option>
+									<option value="BA">Bahia</option>
+									<option value="CE">Ceará</option>
+									<option value="DF">Distrito Federal</option>
+									<option value="ES">Espirito Santo</option>
+									<option value="GO">Goiás</option>
+									<option value="MA">Maranhão</option>
+									<option value="MS">Mato Grosso do Sul</option>
+									<option value="MT">Mato Grosso</option>
+									<option value="MG">Minas Gerais</option>
+									<option value="PA">Pará</option>
+									<option value="PB">Paraíba</option>
+									<option value="PR">Paraná</option>
+									<option value="PE">Pernambuco</option>
+									<option value="PI">Piauí</option>
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="RN">Rio Grande do Norte</option>
+									<option value="RS">Rio Grande do Sul</option>
+									<option value="RO">Rondônia</option>
+									<option value="RR">Roraima</option>
+									<option value="SC">Santa Catarina</option>
+									<option value="SP">São Paulo</option>
+									<option value="SE">Sergipe</option>
+									<option value="TO">Tocantins</option>
+										Selecione</option>
+										<input type="number" id="number" name="number" style="width: 0em" placeholder="Numero"><br><br>
+						</div>				
+					</form>
+				</div>
+			</div>	
+			
+		</div>
+		
+	</div>
+
+<button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5 " style="height:50px;">
+	<div style="background-color: #363636;">
+		<div class="container">
+			<div class=" align-items-center">
+				<div class="container text-center text-white mt-5">
+					<div class="row mt-3 dark-grey-text">
+						<div class="col-md-3 col-lg-4 col-xl-3 mb-4">					
+						<a class="nav-link" href="Fale-Conosco.html">Fale Conosco <span class="sr-only">(current)</span></a>
+						</div>
+						<div class=" align-items-center mx-auto mb-5">
+							<h6 class=" text-center text-md-right font-weight-bold">Conecte</h6>
+							<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">  
+							  <!-- Facebook -->
+								<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+								  <!-- Twitter -->
+								<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+								  <!-- Google +-->
+								<a href="#" class="google"><i class="fa fa-google"></i></a>
+								  <!--Youtube-->
+								<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+								  <!--Linkedin -->
+								<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+						</div>   
+						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+							<h6 class=" font-weight-bold">Contact</h6>
+							<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+							<a href="#" class="phone"><i class="fa fa-phone"></i></a> 0800-000-000				  
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		
+		function mascara(o,f){
+			v_obj=o
+			v_fun=f
+			setTimeout("execmascara()",1)
+		}
+		function execmascara(){
+			v_obj.value=v_fun(v_obj.value)
+		}
+		function mtel(v){
+			v=v.replace(/\D/g,"");             //Remove tudo o que não é dígito
+			v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+			v=v.replace(/(\d)(\d{4})$/,"$1-$2");    //Coloca hífen entre o quarto e o quinto dígitos
+			return v;
+		}
+		function id( el ){
+			return document.getElementById( el );
+		}
+		window.onload = function(){
+			id('telefone').onkeyup = function(){
+				mascara( this, mtel );
+			}
+		}
+	</script>
+	
+	<script language="Javascript">
+		function validacaoEmail(field) {
+		usuario = field.value.substring(0, field.value.indexOf("@"));
+		dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+		if ((usuario.length >=1) &&
+			(dominio.length >=3) && 
+			(usuario.search("@")==-1) && 
+			(dominio.search("@")==-1) &&
+			(usuario.search(" ")==-1) && 
+			(dominio.search(" ")==-1) &&
+			(dominio.search(".")!=-1) &&      
+			(dominio.indexOf(".") >=1)&& 
+			(dominio.lastIndexOf(".") < dominio.length - 1)) {
+		document.getElementById("msgemail").innerHTML="E-mail valido";
+		alert("email Valido");
+		}
+		else{
+		document.getElementById("msgemail").innerHTML="<font color='red'>Email invalido </font>";
+		alert("E-mail invalido");
+		}
+		}
+	</script>	
+</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
