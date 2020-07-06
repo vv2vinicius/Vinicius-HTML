@@ -58,18 +58,30 @@
 			</div>
 			
 			<h4> Onde Compra </h4>
-			<div class="row">
-				<div class="col-sm">
-					<a href="https://www.americanas.com.br/produto/1452287305/game-nioh-2-ps4?WT.srch=1&acc=e789ea56094489dffd798f86ff51c7a9&epar=bp_pl_00_go_gm_jogos_todas_geral_gmv&gclid=Cj0KCQjw9tbzBRDVARIsAMBplx-WVXp-e6EwY41wcrWiPjv96K5g_eomyx-RytGQ_kH1hMyaWETCN7IaAqMeEALw_wcB&i=5612cbe46ed24cafb5cae011&o=5e299535f8e95eac3defa555&opn=YSMESP&sellerid=02&wt.srch=1"target="_blank"><img src="img/americanas.png" width="80" height="80"> </a> 
+			
+			<div class="row" >
+				<div class="col-sm" id="manipula"
+				onMouseOver="colocaBorder(logo);" 
+				onMouseOut="excluiBorder(logo);"
+				style="cursor:pointer" >
+					<a href="https://www.americanas.com.br/produto/1452287305/game-nioh-2-ps4?WT.srch=1&acc=e789ea56094489dffd798f86ff51c7a9&epar=bp_pl_00_go_gm_jogos_todas_geral_gmv&gclid=Cj0KCQjw9tbzBRDVARIsAMBplx-WVXp-e6EwY41wcrWiPjv96K5g_eomyx-RytGQ_kH1hMyaWETCN7IaAqMeEALw_wcB&i=5612cbe46ed24cafb5cae011&o=5e299535f8e95eac3defa555&opn=YSMESP&sellerid=02&wt.srch=1"target="_blank"><img src="img/americanas.png" name="logo" width="80" height="80"> </a> 
 				</div>
-				<div class="col-sm">
-					<a href="https://www.pontofrio.com.br/games/playstation4/jogosplaystation4/jogo-nioh-2-ps4-55002723.html"target="_blank"><img src="img/pontofrio.jpeg" width="80" height="80"> </a> 
+				<div class="col-sm"id="manipula1"
+				onMouseOver="colocaBorder1(logo);" 
+				onMouseOut="excluiBorder1(logo);"
+				style="cursor:pointer" >
+					<a href="https://www.pontofrio.com.br/games/playstation4/jogosplaystation4/jogo-nioh-2-ps4-55002723.html"target="_blank"><img src="img/pontofrio.jpeg" name="logo" width="80" height="80"> </a> 
 				</div>
-				<div class="col-sm">
-				<a href="https://www.amazon.com.br/Playstation-PlayStation-4-Nioh-2/dp/B084DSWJJ7"target="_blank"><img src="img/amazon.jpg" width="80" height="80"> </a>	
+				<div class="col-sm"id="manipula2"
+				onMouseOver="colocaBorder2(logo);" 
+				onMouseOut="excluiBorder2(logo);"
+				style="cursor:pointer" >
+					<a href="https://www.amazon.com.br/Playstation-PlayStation-4-Nioh-2/dp/B084DSWJJ7"target="_blank"><img src="img/amazon.jpg" name="logo" width="80" height="80"> </a> 
+				</div>
+				
 			</div>
-		</div>
 	</div>
+	
 	<!-- Footer -->
 <footer class="page-footer font-small blue-grey lighten-5 " style="height:50px;">
 	<div style="background-color: #363636;">
@@ -105,6 +117,34 @@
 		</div>
 	</div>
 </footer>
+
+	<script>
+		function colocaBorder() {
+		  document.getElementById("manipula").style. opacity = "0.5";
+		}
+
+		function excluiBorder() {
+		   document.getElementById("manipula").style. opacity = "1";
+		}
+   </script>
+   <script>
+		function colocaBorder1() {
+		  document.getElementById("manipula1").style. opacity = "0.5";
+		}
+
+		function excluiBorder1() {
+		   document.getElementById("manipula1").style. opacity = "1";
+		}
+   </script>
+	<script>
+		function colocaBorder2() {
+		  document.getElementById("manipula2").style. opacity = "0.5";
+		}
+
+		function excluiBorder2() {
+		   document.getElementById("manipula2").style. opacity = "1";
+		}
+   </script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>

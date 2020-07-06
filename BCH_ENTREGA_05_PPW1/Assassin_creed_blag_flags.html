@@ -58,17 +58,28 @@
 			</div>
 			
 			<h4> Onde Compra </h4>
-			<div class="row">
-				<div class="col-sm">
-					<a href="https://www.americanas.com.br/produto/116923528?pfm_carac=assassins%20creed%20iv%20black%20flag%20ps4&pfm_index=1&pfm_page=search&pfm_pos=grid&pfm_type=search_page"target="_blank"><img src="img/americanas.png" width="80" height="80"> </a> 
+
+			<div class="row" >
+				<div class="col-sm" id="manipula"
+				onMouseOver="colocaBorder(logo);" 
+				onMouseOut="excluiBorder(logo);"
+				style="cursor:pointer" />
+					<a href="https://www.americanas.com.br/produto/116923528?pfm_carac=assassins%20creed%20iv%20black%20flag%20ps4&pfm_index=1&pfm_page=search&pfm_pos=grid&pfm_type=search_page"target="_blank"><img src="img/americanas.png" name="logo" width="80" height="80"> </a> 
 				</div>
-				<div class="col-sm">
-					<a href="https://www.pontofrio.com.br/Games/Playstation4/JogosPlaystation4/jogo-assassins-creed-iv-black-flag-ps4-15386397.html?IdSku=15386397&recSource=wproduct&recType=lx_produtos_visitados_por_quem_procura_este_item"target="_blank"><img src="img/pontofrio.jpeg" width="80" height="80"> </a> 
+				<div class="col-sm"id="manipula1"
+				onMouseOver="colocaBorder1(logo);" 
+				onMouseOut="excluiBorder1(logo);"
+				style="cursor:pointer" />
+					<a href="https://www.pontofrio.com.br/Games/Playstation4/JogosPlaystation4/jogo-assassins-creed-iv-black-flag-ps4-15386397.html?IdSku=15386397&recSource=wproduct&recType=lx_produtos_visitados_por_quem_procura_este_item"target="_blank"><img src="img/pontofrio.jpeg" name="logo" width="80" height="80"> </a> 
 				</div>
-				<div class="col-sm">
-				<a href="https://www.amazon.com.br/Jogo-Assassins-Creed-IV-Black/dp/B07582SLV2/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=Assassin%27s+Creed+IV+Black+Flag&qid=1588451288&s=videogames&sr=1-1"target="_blank"><img src="img/amazon.jpg" width="80" height="80"> </a>	
+				<div class="col-sm"id="manipula2"
+				onMouseOver="colocaBorder2(logo);" 
+				onMouseOut="excluiBorder2(logo);"
+				style="cursor:pointer" />
+					<a href="https://www.amazon.com.br/Jogo-Assassins-Creed-IV-Black/dp/B07582SLV2/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=Assassin%27s+Creed+IV+Black+Flag&qid=1588451288&s=videogames&sr=1-1"target="_blank"><img src="img/amazon.jpg" name="logo" width="80" height="80"> </a> 
+				</div>
+				
 			</div>
-		</div>
 	</div>
 	<!-- Footer -->
 <footer class="page-footer font-small blue-grey lighten-5 " style="height:50px;">
@@ -106,6 +117,34 @@
 	</div>
 </footer>
 
+	<script>
+		function colocaBorder() {
+		  document.getElementById("manipula").style. opacity = "0.5";
+		}
+
+		function excluiBorder() {
+		   document.getElementById("manipula").style. opacity = "1";
+		}
+   </script>
+   <script>
+		function colocaBorder1() {
+		  document.getElementById("manipula1").style. opacity = "0.5";
+		}
+
+		function excluiBorder1() {
+		   document.getElementById("manipula1").style. opacity = "1";
+		}
+   </script>
+	<script>
+		function colocaBorder2() {
+		  document.getElementById("manipula2").style. opacity = "0.5";
+		}
+
+		function excluiBorder2() {
+		   document.getElementById("manipula2").style. opacity = "1";
+		}
+   </script>
+   
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
 	<script src="js/bootstrap.min.js"></script>
