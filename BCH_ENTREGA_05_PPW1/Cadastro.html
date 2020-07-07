@@ -3,7 +3,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	</head>
-<body> 
+<body onload="teste()"> 
 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
 		<a class="navbar-brand text-white "  href="#">Mj</a>
@@ -29,8 +29,8 @@
 						<a class="dropdown-item text-white" href="Grand_Theft_Auto_V.html">Grand Theft Auto V</a>
 					</div>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link text-white" href="Cadastro.html"> Cadastre-se</a>
+				<li class="nav-item" >
+					<a class="nav-link " id="cad" href="Cadastro.html"> Cadastre-se</a>
 				</li>
 			</ul>
 		</div>
@@ -178,7 +178,33 @@
 		</div>
 	</div>
 	
-	<script type="text/javascript">
+	
+	
+	
+</footer>
+
+<script>
+	  function teste(){
+			  var url = window.location.href;
+              url = url.split('BCH_ENTREGA_05_PPW1/')
+              url = url[1]
+			  console.log(url)
+		if(url == "Cadastro.html"){
+			var t = document.getElementById("cad")
+			
+			if (t.classList){
+				t.classList.add('active')
+				t.style.color="#6959CD"
+			}
+			else{
+				t.className += 'active'
+				t.style.color="#000000"
+				}
+		}
+	  }
+</script>
+
+<script >
 		
 		function mascara(o,f){
 			v_obj=o
@@ -200,11 +226,11 @@
 		window.onload = function(){
 			id('telefone').onkeyup = function(){
 				mascara( this, mtel );
-			}
+			},teste()
 		}
 	</script>
 	
-	<script language="Javascript">
+	<script>
 		function validacaoEmail(field) {
 		usuario = field.value.substring(0, field.value.indexOf("@"));
 		dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
@@ -232,7 +258,9 @@
 		}
 		}
 	</script>	
-</footer>
+	
+	
+
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>

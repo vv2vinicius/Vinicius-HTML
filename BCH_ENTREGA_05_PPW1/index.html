@@ -3,8 +3,12 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	</head>
-<body> 
+
+<body onload="teste()">
+
 	
+
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
 		<a class="navbar-brand text-white "  href="#">Mj</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +17,7 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+					<a  class="nav-link" id="home" href="index.html">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link text-white" href="Tabela-Jogos.html">Preços</a>
@@ -30,7 +34,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-white" href="Cadastro.html"> Cadastre-se</a>
+					<a class="nav-link text-white"  href="Cadastro.html"> Cadastre-se</a>
 				</li>
 			</ul>
 		</div>
@@ -100,6 +104,29 @@
 		</div>
 	</div>
 </footer>
+
+
+
+<script>
+	  function teste(){
+			  var url = window.location.href;
+              url = url.split('BCH_ENTREGA_05_PPW1/')
+              url = url[1]
+			  console.log(url)
+		if(url == "index.html"){
+			var t = document.getElementById("home")
+			
+			if (t.classList){
+				t.classList.add('active')
+				t.style.color="#6959CD"
+			}
+			else{
+				t.className += 'active'
+				t.style.color="#000000"
+				}
+		}
+	  }
+</script>
 
 
 		

@@ -3,7 +3,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	</head>
-<body> 
+<body onload="teste()"> 
 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
 		<a class="navbar-brand text-white "  href="#">Mj</a>
@@ -16,7 +16,7 @@
 					<a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-white" href="Tabela-Jogos.html">Preços</a>
+					<a class="nav-link " id="tj" href="Tabela-Jogos.html">Preços</a>
 				</li>
 				<li class="nav-item dropdown  " >
 					<a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -177,7 +177,26 @@
 		</div>
 	</div>
 </footer>
-
+<script>
+	  function teste(){
+			  var url = window.location.href;
+              url = url.split('BCH_ENTREGA_05_PPW1/')
+              url = url[1]
+			  console.log(url)
+		if(url == "Tabela-Jogos.html"){
+			var t = document.getElementById("tj")
+			
+			if (t.classList){
+				t.classList.add('active')
+				t.style.color="#6959CD"
+			}
+			else{
+				t.className += 'active'
+				t.style.color="#000000"
+				}
+		}
+	  }
+</script>
 
 		
 	

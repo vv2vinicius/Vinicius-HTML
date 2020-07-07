@@ -3,7 +3,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	</head>
-<body> 
+<body onload ="teste()" >
 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
 		<a class="navbar-brand text-white "  href="#">Mj</a>
@@ -65,7 +65,7 @@
 				<div class="container text-center text-white mt-5">
 					<div class="row mt-3 dark-grey-text">
 						<div class="col-md-3 col-lg-4 col-xl-3 mb-4">					
-						<a class="nav-link" href="Fale-Conosco.html">Fale Conosco <span class="sr-only">(current)</span></a>
+						<a class="nav-link" id="fc" href="Fale-Conosco.html">Fale Conosco <span class="sr-only">(current)</span></a>
 						</div>
 						<div class=" align-items-center mx-auto mb-5">
 							<h6 class=" text-center text-md-right font-weight-bold">Conecte</h6>
@@ -92,6 +92,27 @@
 		</div>
 	</div>
 </footer>
+
+<script>
+	  function teste(){
+			  var url = window.location.href;
+              url = url.split('BCH_ENTREGA_05_PPW1/')
+              url = url[1]
+			  console.log(url)
+		if(url == "Fale-Conosco.html"){
+			var t = document.getElementById("fc")
+			
+			if (t.classList){
+				t.classList.add('active')
+				t.style.color="#6959CD"
+			}
+			else{
+				t.className += 'active'
+				t.style.color="#000000"
+				}
+		}
+	  }
+</script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>

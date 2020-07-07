@@ -3,7 +3,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	</head>
-<body> 
+<body onload ="teste()" >
 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
 		<a class="navbar-brand text-white "  href="#">Mj</a>
@@ -19,14 +19,14 @@
 					<a class="nav-link text-white" href="Tabela-Jogos.html">Preços</a>
 				</li>
 				<li class="nav-item dropdown  " >
-					<a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<a class="nav-link dropdown-toggle" id="ad" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Jogos
 					</a>
 					<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item text-white" href="Call_of_duty_modern_warfare.html">Call of Duty Modern Warfare</a>
-						<a class="dropdown-item text-white" href="Assassin_creed_blag_flags.html">Assassin's Creed IV Black Flag</a>
+						<a class="dropdown-item text-white"  href="Assassin_creed_blag_flags.html">Assassin's Creed IV Black Flag</a>
 						<a class="dropdown-item text-white" href="Nioh_2.html">Nioh 2</a>
-						<a class="dropdown-item text-white" href="Grand_Theft_Auto_V.html">Grand Theft Auto V</a>
+						<a class="dropdown-item " id="gta" href="Grand_Theft_Auto_V.html">Grand Theft Auto V</a>
 					</div>
 				</li>
 				<li class="nav-item">
@@ -144,6 +144,32 @@
 		   document.getElementById("manipula2").style. opacity = "1";
 		}
    </script>
+   
+    <script>
+	  function teste(){
+			  var url = window.location.href;
+              url = url.split('BCH_ENTREGA_05_PPW1/')
+              url = url[1]
+			  console.log(url)
+		if(url == "Grand_Theft_Auto_V.html"){
+			var t = document.getElementById("gta")
+			var d = document.getElementById("ad")
+			if (t.classList){
+				t.style.color="#6959CD"
+				d.classList.add('active')
+				d.style.color="#6959CD"
+			}
+			else{
+				t.className += 'active'
+				t.style.color="#000000"
+				d.className += 'active'
+				d.style.color="#000000"
+				}
+		}
+	  }
+</script>
+   
+
    
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
